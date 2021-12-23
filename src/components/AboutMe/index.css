@@ -1,0 +1,93 @@
+.aboutSection{
+    background: #14141e;
+}
+.aboutSectionContent{
+    margin: 0 auto;
+    width: 70%;
+    padding: 5em 0;
+    gap: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.AboutMe{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+.aboutMe__Content__Title{
+    margin-top: .5em;
+    text-transform: uppercase;
+    font-weight:  bold;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    z-index: 5;
+}
+.aboutMe__Content__Text{
+    font-weight: 500;
+    padding-top: 1em;
+    margin: 0 auto;
+    color: #787883;
+    text-align: left;
+}
+.aboutMe__Content__Text span{
+    color: #fff;
+}
+.aboutMe__Card{
+    flex: 1 1 auto;
+    border: 2px solid #f45865;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.aboutMe__CardContent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    padding: 1em;
+    gap: .3 em;
+}
+.aboutMe__CardContent__Item p{
+    font-weight: bold;
+    color: #787883;
+}
+.aboutMe__CardContent__Item p span{
+    font-weight: bold;
+    color: #fff;
+}
+.aboutMe__Content__Title::after{
+    content: 'Discover';
+    font-size: 22px;
+    color: #f45865;
+    position: absolute;
+    top: -55%;
+    left: 0;
+}
+.aboutMe__Content__Title::before{
+    content: '';
+    display: block;
+    min-width: 1.5em;
+    max-width: 1.5em;
+    width: 5%;
+    height: 2px;
+    position: absolute;
+    background-color: #f45865;
+    bottom: -10px;
+    z-index: -1;
+    border-radius: 1em;
+}
+@media (max-width: 768px){
+    .aboutSectionContent{
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 425px){
+    .aboutMe__Content__Title::after{
+        top: -65%;
+    }
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+.welcome-section{
+    height: 100vh;
+    width: 100%;
+}
+.welcome-section__background{
+    background: url('https://i.ibb.co/ZWJ4gtw/homescreen-BG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: relative;
+}
+.welcome-section__background::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 0;
+}
+.welcome-section__content{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+}
+.welcome-section__socials{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.welcome-section__socials-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #f45865;
+    border-radius: 50%;
+    color: #fff;
+    transition: background .3s ease;
+}
+.welcome-section__socials-item:hover{
+    background: #f45865;
+    color: #fff;
+}
+.welcome-section__title{
+    color: #f45865;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+.welcome-section__subtitle{
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Poppins';
+}
+.welcome-section__arrow{
+    position: absolute;
+    left: 1%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f45865;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    animation: bootAnimation 1s infinite linear;
+    transition: box-shadow .5s ease;
+}
+.welcome-section__arrow:hover{
+    box-shadow: 0 0 10px #f45865;
+}
+.fa-arrow-circle-down{
+    color: #fff;
+}
+@keyframes bootAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-30%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px){
+    .welcome-section__title{
+        font-size: 4rem;
+    }
+}

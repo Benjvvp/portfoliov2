@@ -1,0 +1,101 @@
+.projectsSection{
+    background-color: #232331;
+    color: #fff;
+}
+.projectsContainer{
+    padding: 5em 0;
+    margin: 0 auto;
+    width: 70%;
+}
+.projects__content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-gap: 2em;
+    gap: 2em;
+}
+.projects__title{
+    text-transform: uppercase;
+    position: relative;
+    z-index: 5;
+    font-weight: bold;   
+}
+.projects__title::after{
+    content: 'Experience';
+    font-size: 22px;
+    color: #f45865;
+    position: absolute;
+    top: -55%;
+    left: 0;
+}
+.projects__title::before{
+    content: '';
+    display: block;
+    min-width: 1.5em;
+    max-width: 1.5em;
+    width: 5%;
+    height: 2px;
+    position: absolute;
+    background-color: #f45865;
+    bottom: -10px;
+    z-index: -1;
+    border-radius: 1em;
+}
+.projects_item{
+    border: 2px solid #f45865;
+    border-radius: 1em;
+    width: 20em;
+    height: 20em;
+    flex: 1 1 auto;
+    max-width: 30em;
+}
+.projects__item-img{
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 80%;
+    border-radius: 1em 1em 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+.projects__item-content{
+    position: relative;
+    height: 100%;
+    z-index: 122;
+}
+.projects__item-content .position-absolute{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+}
+.projects__item-link{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    background-color: #f45865;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+    font-weight: bold;
+}
+.projects__item-link.blocked:hover{
+    cursor: not-allowed;
+}
+.projects__item-link:hover{
+    background-color: #af4049;
+    color: #fff;
+}
+.projects__item-link:nth-child(1){
+    border-radius: 0 0 0 1em;
+}
+.projects__item-link:nth-child(2){
+    border-radius: 0 0 1em 0;
+}

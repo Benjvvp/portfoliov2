@@ -1,0 +1,63 @@
+.contactSection{
+    background: #14141e;
+}
+.contactSectionContent{
+    margin: 0 auto;
+    width: 70%;
+    padding: 5em 0;
+}
+.contact__title{
+    margin-top: .5em;
+    text-transform: uppercase;
+    font-weight:  bold;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    z-index: 5;
+}
+.contact__title::after{
+    content: 'Contact with me';
+    font-size: 22px;
+    color: #f45865;
+    position: absolute;
+    top: -55%;
+    left: 0;
+}
+.contact__title::before{
+    content: '';
+    display: block;
+    min-width: 1.5em;
+    max-width: 1.5em;
+    width: 5%;
+    height: 2px;
+    position: absolute;
+    background-color: #f45865;
+    bottom: -10px;
+    z-index: -1;
+    border-radius: 1em;
+}
+.btnFormSubmit{
+    background: #f45865 !important;
+    color: #fff;
+    border: 2px solid #f45865 !important;
+    border-radius: 1em;
+    padding: .5em 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btnFormSubmit:hover{
+    background: #b4414a !important;
+    border: 2px solid #b4414a !important;
+}
+.inputFormContact{
+    border: 2px solid #f45865 !important;
+    background: none !important;
+    box-shadow: none !important;
+    color: #fff !important;
+}
+.inputFormContact:focus{
+    border: 2px solid #f45865 !important;
+    background: none !important;
+    box-shadow: 0 0 10px #b4414a !important;
+    resize: none !important;
+}
