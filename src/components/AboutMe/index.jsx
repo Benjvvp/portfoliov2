@@ -7,7 +7,7 @@ export default function AboutMe() {
   const card_biography = {
     FullName: "Benjamin Perez",
     Birthday: '14/02/2007',
-    Age: '14',
+    Age: '15',
     Experience: '2 Years',
     Hobby: 'Programming and playing video games',
   }
