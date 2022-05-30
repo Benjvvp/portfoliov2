@@ -9,9 +9,12 @@ export default function Projects() {
       demo: "https://pasteleriareina.cl",
     },
     {
-        img: "/img/paintball.png",
-        demo: "https://paintballlaserena.netlify.app/#",
-    }
+      img: "/img/paintball.png",
+      demo: "https://paintballlaserena.netlify.app/#",
+    },
+    {
+      img: "/img/ticket106.png",
+    },
   ];
 
   return (
@@ -29,11 +32,19 @@ export default function Projects() {
                   className="projects__item-img"
                 />
                 <div className="d-flex justify-content-between position-absolute bottom-0">
-                  <p className={`projects__item-link ${!project.demo ? "" : "blocked"}`}>Github</p>
+                  <p
+                    className={`projects__item-link ${
+                      !project.github ? "blocked" : ""
+                    }`}
+                  >
+                    Github
+                  </p>
                   <a
                     href={project.demo}
                     target={"_blank"}
-                    className="projects__item-link"
+                    className={`projects__item-link ${
+                      !project.demo ? "blocked" : ""
+                    }`}
                   >
                     Demo
                   </a>
